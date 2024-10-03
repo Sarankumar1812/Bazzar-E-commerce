@@ -53,12 +53,12 @@ const ProductCard = ({ product, addToCart, removeFromCart, isInCart }) => {
         <button
           className={`py-2 px-4 mt-4 border rounded-sm w-full transition-all duration-300 ${
             isInCart
-              ? "bg-green-300 text-white"
+              ? "bg-red-300 text-white"
               : "bg-white text-gray-800 hover:bg-slate-700 hover:text-white border-gray-600"
           }`}
           onClick={handleCartAction}
         >
-          {isInCart ? "Item Added To Cart" : "Add To Cart"}
+          {isInCart ? "Remove From Cart" : "Add To Cart"}
         </button>
       </div>
     </div>
