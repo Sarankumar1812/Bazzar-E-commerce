@@ -77,7 +77,7 @@ const ProductCard = () => {
               <button
                 className={`font-semibold py-2 px-4 mt-4 border rounded-sm w-full transition-all duration-300 ${
                   isInCart
-                    ? "bg-green-300 text-white border-green-300 hover:bg-green-300"
+                    ? "bg-red-300 text-white border-red-300 hover:bg-red-300"
                     : "bg-white text-gray-800 border-gray-600 hover:bg-slate-700 hover:text-white"
                 }`}
                 onClick={() => {
@@ -88,7 +88,7 @@ const ProductCard = () => {
                   }
                 }}
               >
-                {isInCart ? "Item Added To Cart" : "Add To Cart"}
+                {isInCart ? "Remove From Cart" : "Add To Cart"}
               </button>
             </div>
           </div>
